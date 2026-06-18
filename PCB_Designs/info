@@ -1,0 +1,184 @@
+{
+  "uuid": "b493c1bf7487f3ca16ad62a1230a7117",
+  "path": "Offline/7-seg_display",
+  "name": "7-seg_display",
+  "content": "",
+  "created_at": "2026-06-13 14:05:43",
+  "updated_at": "2026-06-17 09:28:13",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "a9121b3f84fb23c473014e5d422e6675",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "93b44d62463c4c9c82dd7108c8ee7d73": 1,
+        "81a79f3bc4d34813b1ad375d73ea5445": 1,
+        "aa6ad360bcd7467b99ee83f2475b2392": 2,
+        "e3be08079aa14ad891d42f46a7df393a": 1,
+        "b0248eb51e084227889f2cb84eab79c4": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "10uf",
+          1,
+          "CAP-D3.0×F1.5",
+          "C2",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "0.56 Inch 4 Digit Common Anode 7 Segment",
+          2,
+          "0.56 INCH 4 DIGIT COMMON ANODE 7 SEGMENT DISPLAY CLOCK",
+          "DS1,DS2",
+          {
+            "Manufacturer Part": "0.56 Inch 4 Digit Common Anode 7 Segment Display Clock",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "HDR-M-2.54_1x6",
+          1,
+          "HDR-M-2.54_1X6",
+          "J1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "LCSC",
+            "Supplier Part": "C190819"
+          }
+        ],
+        [
+          "10K",
+          1,
+          "R0603",
+          "R2",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "My MAX7219",
+          1,
+          "MY MAX7219",
+          "U1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ]
+      ],
+      "updateTime": 1781668690,
+      "createTime": 1781339744,
+      "histories": [],
+      "created_at": "2026-06-13 14:05:44",
+      "updated_at": "2026-06-17 09:28:10"
+    },
+    {
+      "uuid": "b4cc81e0290b1f4ec3d9b17eac0f03be",
+      "puuid": "b493c1bf7487f3ca16ad62a1230a7117",
+      "title": "PCB_7-seg_display",
+      "filename": "PCB_7-seg_display.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "398691f1f785460098bbe5ee6590333c": 1,
+        "a39e211d07fc49f09c02819227c89e5f": 1,
+        "c9a6c78333a345649cb6d1bed7dd076b": 2,
+        "df3ca37cb13d499cb713e9aa6fdd0c7b": 1,
+        "d8504ae759044bd08cf45f06ca6486b6": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "10uF",
+          1,
+          "CAP_10UF_TH",
+          "C1",
+          {
+            "Manufacturer Part": "ERS1HM100D11OT",
+            "Manufacturer": "AISHI(艾华集团)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C106654"
+          }
+        ],
+        [
+          "0.56 Inch 4 Digit Common Anode 7 Segment",
+          2,
+          "0.56 INCH 4 DIGIT COMMON ANODE 7 SEGMENT DISPLAY CLOCK",
+          "DS1,DS2",
+          {
+            "Manufacturer Part": "0.56 Inch 4 Digit Common Anode 7 Segment Display Clock",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "HDR-M-2.54_1x6",
+          1,
+          "HDR-M-2.54_1X6",
+          "J1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "LCSC",
+            "Supplier Part": "C190819"
+          }
+        ],
+        [
+          "My MAX7219",
+          1,
+          "MY MAX7219",
+          "U1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ]
+      ],
+      "updateTime": 1781668693,
+      "createTime": 1781349893,
+      "histories": [],
+      "created_at": "2026-06-13 16:54:53",
+      "updated_at": "2026-06-17 09:28:13"
+    }
+  ],
+  "sort": [],
+  "title": "7-seg_display",
+  "foldername": "7-seg_display",
+  "schfilename": "7-seg_display.json",
+  "schfilemtime": 1781668690636
+}
