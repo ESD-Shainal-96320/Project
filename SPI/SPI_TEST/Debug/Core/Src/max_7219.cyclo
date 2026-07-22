@@ -1,0 +1,7 @@
+../Core/Src/max_7219.c:56:6:MAX7219_Send	1
+../Core/Src/max_7219.c:68:6:MAX7219_Init	1
+../Core/Src/max_7219.c:77:6:MAX7219_DisplayCPU	1
+../Core/Src/max_7219.c:85:6:MAX7219_DisplayGPU	1
+../Core/Src/max_7219.c:94:6:MAX7219_DisplayTemp	1
+../Core/Src/max_7219.c:104:6:MAX7219_DisplayChar	1
+../Core/Src/max_7219.c:109:6:MAX7219_DisplayNumber	1

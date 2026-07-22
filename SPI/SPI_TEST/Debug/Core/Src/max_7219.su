@@ -1,0 +1,7 @@
+../Core/Src/max_7219.c:56:6:MAX7219_Send	24	static
+../Core/Src/max_7219.c:68:6:MAX7219_Init	8	static
+../Core/Src/max_7219.c:77:6:MAX7219_DisplayCPU	16	static
+../Core/Src/max_7219.c:85:6:MAX7219_DisplayGPU	16	static
+../Core/Src/max_7219.c:94:6:MAX7219_DisplayTemp	16	static
+../Core/Src/max_7219.c:104:6:MAX7219_DisplayChar	16	static
+../Core/Src/max_7219.c:109:6:MAX7219_DisplayNumber	16	static
