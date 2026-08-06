@@ -1,0 +1,24 @@
+Steps for the Device Tree Overlay:
+
+step 1:	sudo apt install device-tree-compiler
+	// first installed the device tree compiler in BBB
+	
+step 2:	Wrote the final overlay (BB-SPI1-01-00A0-v2.dts) file
+	// Three fragments, each addressing a specific problem discovered along the way
+	
+step 3:	dtc -O dtb -o BB-SPI1-01-00A0-v2.dtbo -b 0 -@ BB-SPI1-01-00A0-v2.dts
+	// Compile it
+	
+step 4: sudo cp BB-SPI1-01-00A0-v2.dtbo /lib/firmware/
+	// Installed it in BBB (Basically we copied the .dtbo file in the /lib/firmware of BBB)
+	
+step 5: uboot_overlay_addr0=/lib/firmware/BB-SPI1-01-00A0-v2.dtbo
+	// Pointed U-Boot at it via /boot/uEnv.txt
+	
+step 6: echo spi | sudo tee /sys/devices/platform/ocp/ocp:P9_30_pinmux/state
+	// Handled P9-30 separately
+	// This one pin is managed by a different mechanism (bone-pinmux-helper, built into the kernel, not controllable via the overlay's am33xx_pinmux group without conflicting with it) — set at runtime and automated with a systemd oneshot service so it persists across reboots
+	
+step 7: sudo reboot
+	cat /sys/bus/spi/devices/spi1.0/modalias   # confirmed: spi:max7219
+	// Reboot and Verified
