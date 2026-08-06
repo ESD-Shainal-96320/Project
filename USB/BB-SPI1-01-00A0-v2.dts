@@ -1,0 +1,43 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "ti,beaglebone-black", "ti,beaglebone";
+
+	fragment@0 {
+		target = <&mcasp0>;
+		__overlay__ {
+			status = "disabled";
+		};
+	};
+
+	fragment@1 {
+		target = <&am33xx_pinmux>;
+		__overlay__ {
+			spi1_pins_s0: spi1_pins_s0 {
+				pinctrl-single,pins = <
+					0x190 0x33
+					0x194 0x33
+					0x19c 0x33
+				>;
+			};
+		};
+	};
+
+	fragment@2 {
+		target = <&spi1>;
+		__overlay__ {
+			status = "okay";
+			pinctrl-names = "default";
+			pinctrl-0 = <&spi1_pins_s0>;
+		};
+	};
+
+	fragment@3 {
+		target-path = "/ocp/interconnect@48000000/segment@100000/target-module@a0000/spi@0/channel@0";
+		__overlay__ {
+			compatible = "maxim,max7219";
+			spi-max-frequency = <1000000>;
+		};
+	};
+};
